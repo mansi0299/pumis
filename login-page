@@ -1,0 +1,498 @@
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport">
+    <title>PUMIS</title>
+
+    <style>
+@import "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+@media screen and (max-width:370px)
+{
+  body{
+    margin: 0;
+    padding: 0;
+    font-family: serif;
+    background: url("https://images.pexels.com/photos/1000444/pexels-photo-1000444.jpeg?cs=srgb&dl=silhouette-of-people-during-sunset-1000444.jpg&fm=jpg") no-repeat;
+    background-size: cover;
+    height: 570px;
+    background-blend-mode:luminosity;
+  }
+  .login-box{
+    position: fixed;
+    top:13%;
+    padding:10%;
+    transform: translate(0%,-20%)
+    color:white;
+  }
+
+  .login-box h1{
+    font-size:25px;
+    border-bottom:1.5px solid #4caf50;
+    margin-bottom:1px;
+    padding:1px
+  }
+  .textbox{
+    width:100%;
+    overflow:hidden;
+    font-size:20px;
+    padding:5px 0;
+    margin:5px 0;
+    border-bottom:1px solid white;
+  }
+  .textbox #txt{
+    width: 250px;
+    height: 20px;
+  }
+
+  .textbox i{
+    width:10px;
+    display: left;
+    text-align: center;
+  }
+  .textbox input{
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 20px;
+    color: white
+  }
+  .btn1{
+    width: 100%;
+    outline:none;
+    background: none;
+    border:2px solid #4caf50;
+    border-radius: 20px;
+    border-radius: 0.5%
+    color:white;
+    text-align:center;
+    margin:12px 0px;
+
+  }
+  .btn1:hover{
+    background-color: green;
+  }
+  .signup-box{
+    position: fixed;
+    position:absolute;
+    top:270px;
+    transform: translate(0%,-20%)
+    color:white;
+    width: 280px;
+  }
+  .signup-box h2{
+    font-size:25px;
+    border-bottom:2px solid #4caf50;
+    margin-bottom:1px;
+    padding:1px;
+    color:white;
+  }
+  .btn2{
+    width: 100%;
+    outline:none;
+    background: none;
+    border:2px solid #4caf50;
+    border-radius: 20px;
+    color:white;
+    text-align:center;
+    margin:12px 0px;
+    height: 26.8px;
+    margin-top: 0px;
+  }
+  .btn2:hover{
+    background-color: green;
+  }
+  p{
+    text-align: center;
+    margin-top: 20px;
+    color: white;
+  }
+  a{
+    color: white;
+  }
+  a:hover{
+    color: yellow;
+  }
+  .logo #img{
+    width:150px;
+    height:50px;
+  }
+}
+@media screen and (min-width:371px)
+{
+  body{
+    margin: 0;
+    padding: 0;
+    font-family: serif;
+    background: url("https://images.pexels.com/photos/1000444/pexels-photo-1000444.jpeg?cs=srgb&dl=silhouette-of-people-during-sunset-1000444.jpg&fm=jpg") no-repeat;
+    background-size: cover;
+    height: 500px;
+    background-blend-mode:luminosity;
+    position:
+
+
+  }
+  .login-box{
+    position: fixed;
+    top:13%;
+    left:100px;
+    transform: translate(0%,-20%)
+    color:white;
+  }
+
+  .login-box h1{
+    font-size:25px;
+    border-bottom:1.5px solid #4caf50;
+    margin-bottom:1px;
+    padding:1px
+  }
+  .textbox{
+    width:100%;
+    overflow:hidden;
+    font-size:20px;
+    padding:5px 0;
+    margin:5px 0;
+    border-bottom:1px solid white;
+  }
+  .textbox #txt{
+    width: 250px;
+    height: 20px;
+  }
+
+  .textbox i{
+    width:10px;
+    display: left;
+    text-align: center;
+  }
+  .textbox input{
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 20px;
+    color: white
+  }
+  .btn1{
+    width: 100%;
+    outline:none;
+    background: none;
+    border:2px solid #4caf50;
+    border-radius: 20px;
+    border-radius: 0.5%
+    color:white;
+    text-align:center;
+    margin:12px 0px;
+
+  }
+  .btn1:hover{
+    background-color: green;
+  }
+  .signup-box{
+    position: fixed;
+    position:absolute;
+    top:200px;
+    transform: translate(0%,-20%)
+    color:white;
+    width: 280px;
+  }
+  .signup-box h2{
+    font-size:25px;
+    border-bottom:2px solid #4caf50;
+    margin-bottom:1px;
+    padding:1px;
+    color:white;
+  }
+  .btn2{
+    width: 100%;
+    outline:none;
+    background: none;
+    border:2px solid #4caf50;
+    border-radius: 20px;
+    color:white;
+    text-align:center;
+    margin:12px 0px;
+    height: 26.8px;
+    margin-top: 0px;
+  }
+  .btn2:hover{
+    background-color: green;
+  }
+  p{
+    text-align: center;
+    margin-top: 20px;
+    color: white;
+  }
+  a{
+    color: white;
+  }
+  a:hover{
+    color: yellow;
+  }
+  .logo #img{
+    width:150px;
+    height:50px;
+  }
+
+}
+@media screen and (min-width:500px)
+{
+  body{
+    margin: 0;
+    padding: 0;
+    font-family: serif;
+    background: url("https://images.pexels.com/photos/1000444/pexels-photo-1000444.jpeg?cs=srgb&dl=silhouette-of-people-during-sunset-1000444.jpg&fm=jpg") no-repeat;
+    background-size:cover;
+    height: 330px;
+    background-blend-mode:luminosity;
+  }
+  .login-box{
+    float:left;
+    position: fixed;
+    width: 40%;
+    top:8%;
+    left:25px;
+    transform: translate(0%,-20%)
+    color:white;
+  }
+
+  .login-box h1{
+    font-size:30px;
+    border-bottom:3px solid #4caf50;
+    margin-bottom:15px;
+    padding:1px
+  }
+  .textbox{
+    width:100%;
+    overflow:hidden;
+    font-size:20px;
+    padding:5px 0;
+    margin:5px 0;
+    border-bottom:1px solid white;
+  }
+  .textbox #txt{
+    width: 250px;
+    height: 20px;
+  }
+
+  .textbox i{
+    width:10px;
+    display: left;
+    text-align: center;
+  }
+  .textbox input{
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 20px;
+    color: white
+  }
+  .btn1{
+    width: 100%;
+    outline:none;
+    background: none;
+    border:2px solid #4caf50;
+    border-radius: 20px;
+    border-radius: 0.5%
+    color:white;
+    text-align:center;
+    margin:12px 0px;
+
+  }
+  .btn1:hover{
+    background-color: green;
+  }
+  .signup-box{
+    float: right;
+    position: fixed;
+    width: 50%;
+    position:absolute;
+    top:-2.5%;
+    right:-130%;
+    transform: translate(0%,-20%)
+    color:white;
+    width: 200px;
+  }
+  .signup-box h2{
+    font-size:30px;
+    border-bottom:3px solid #4caf50;
+    margin-bottom:1px;
+    padding:1px;
+    color:black;
+  }
+  .btn2{
+    width: 100%;
+    outline:none;
+    background: none;
+    border:2px solid #4caf50;
+    border-radius: 20px;
+    color:white;
+    text-align:center;
+    margin:12px 0px;
+    height: 26.8px;
+    margin-top: 60px;
+  }
+  .btn2:hover{
+    background-color: green;
+  }
+  p{
+    text-align: center;
+    margin-top: 50px;
+
+  }
+  a{
+    color: white;
+  }
+  a:hover{
+    color: yellow;
+  }
+  .logo #img{
+    width:150px;
+    height:50px;
+  }
+
+}
+@media screen and (min-width:700px)
+{
+  body{
+    margin: 0;
+    padding: 0;
+    font-family: serif;
+    background: url("https://images.pexels.com/photos/1000444/pexels-photo-1000444.jpeg?cs=srgb&dl=silhouette-of-people-during-sunset-1000444.jpg&fm=jpg") no-repeat;
+    background-size:cover;
+    background-blend-mode:luminosity;
+  }
+  .login-box{
+    float:left;
+    position: fixed;
+    width: 50%;
+    top:20%;
+    left:25px;
+    transform: translate(0%,-20%)
+    color:white;
+  }
+
+  .login-box h1{
+    font-size:45px;
+    border-bottom:5px solid #4caf50;
+    margin-bottom:15px;
+    padding:1px
+  }
+  .textbox{
+    width:100%;
+    overflow:hidden;
+    font-size:30px;
+    padding:5px 0;
+    margin:5px 0;
+    border-bottom:1px solid white;
+  }
+  .textbox #txt{
+    width: 250px;
+    height: 20px;
+  }
+
+  .textbox i{
+    width: 26px;
+    display: left;
+    text-align: center;
+  }
+  .textbox input{
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 20px;
+    color: white
+  }
+  .btn1{
+    width: 100%;
+    outline:none;
+    background: none;
+    border:2px solid #4caf50;
+    border-radius: 20px;
+    border-radius: 0.5%
+    color:white;
+    text-align:center;
+    margin:12px 0px;
+
+  }
+  .btn1:hover{
+    background-color: green;
+  }
+  .signup-box{
+    float: right;
+    position: fixed;
+    width: 50%;
+    position:absolute;
+    top:-3%;
+    right:-85%;
+    transform: translate(0%,-20%)
+    color:white;
+    width: 290px;
+  }
+  .signup-box h2{
+    font-size:45px;
+    border-bottom:5px solid #4caf50;
+    margin-bottom:1px;
+    padding:1px;
+    color:black;
+  }
+  .btn2{
+    width: 100%;
+    outline:none;
+    background: none;
+    border:2px solid #4caf50;
+    border-radius: 20px;
+    color:white;
+    text-align:center;
+    margin:12px 0px;
+    height: 26.8px;
+    margin-top: 40px;
+  }
+  .btn2:hover{
+    background-color: green;
+  }
+  p{
+    text-align: center;
+    margin-top: 50px;
+  }
+  a{
+    color: white;
+  }
+  a:hover{
+    color: yellow;
+  }
+  .logo #img{
+    width:300px;
+    height:100px;
+  }
+
+
+}
+    </style>
+  </head>
+  <body>
+    <div class="logo">
+      <img src="https://www.paruluniversity.ac.in/wp-content/themes/parul/images/logonew.png" alt="parul university" align=right id="img"/>
+    </div>
+    <div class="login-box">
+      <h1>LOGIN</h1>
+      <div class="textbox">
+        <i class="fa fa-user icon" aria-hidden="true"></i>
+        <input type="text" placeholder="Username" id="txt">
+      </div>
+      <div class="textbox">
+        <i class="fa fa-lock icon" aria-hidden="true"></i>
+        <input type="password" placeholder="Password" id="txt">
+      </div>
+      <div class="btn1">
+        <input type="button"  value="LOGIN"  style="background:none;border:none;color:darkgreen;font-size:20px">
+      </div>
+      <a href="#">Forget password</a>
+      <div class="signup-box">
+        <h2>SIGNUP</h2>
+        <p>Are you NEW?<br>WELCOME!</p>
+        <div class="btn2">
+          <input type="button"  onclick="location.href='signup.html'" value="Click here!" style="background:none;border:none;color:darkgreen;font-size:20px">
+        </div>
+
+      </div>
+    </div>
+  </body>
+</html>
